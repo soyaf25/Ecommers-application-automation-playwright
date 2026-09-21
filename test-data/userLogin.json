@@ -1,0 +1,14 @@
+
+{
+    "validuser":{
+        "email":"soyaftashildar5542@gmail.com",
+        "password":"Soyaf@123"
+    },
+
+    "invaliduser":{
+        "email": "soyaftashildar55@gmail.com",
+        "password":"Soyaf123"
+    }
+
+
+}
