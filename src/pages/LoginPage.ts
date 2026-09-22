@@ -1,7 +1,7 @@
-import type {Locator, Page}  from '@playwright/test';
-import{config} from "../../config/env.config.js";
-import { commonUtils } from '../utills/commonActionUtills.js';
-import { BasePage } from './BasePage.js';
+import {Locator, Page}  from '@playwright/test';
+import{config} from "../../config/env.config";
+import { commonUtils } from '../utills/commonActionUtills';
+import { BasePage } from './BasePage';
 import {expect} from '@playwright/test';
 
 export class LoginPage extends BasePage{

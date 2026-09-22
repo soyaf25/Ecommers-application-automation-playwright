@@ -1,6 +1,6 @@
-import type {expect, Locator, Page}  from '@playwright/test';
-import{config} from "../../config/env.config.js";
-import { BasePage } from './BasePage.js';
+import {expect, Locator, Page}  from '@playwright/test';
+import{config} from "../../config/env.config";
+import { BasePage } from './BasePage';
 
 export class selfRegister extends BasePage{
     readonly createAccount:Locator;

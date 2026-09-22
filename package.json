@@ -1,19 +1,25 @@
 {
-  "name": "playwright_automation_for_ecommers",
+  "name": "playwright_live_framework_22_july_26",
   "version": "1.0.0",
-  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "rimraf allure-results allure-report",
+    "test": "playwright test",
+    "report:allure": "allure generate allure-results --clean -o allure-report",
+    "report:allure:single": "allure generate allure-results --clean --single-file -o allure-report-single",
+    "report:allure:open": "allure open allure-report"
   },
   "keywords": [],
   "devDependencies": {
     "@playwright/test": "^1.63.0",
-    "@types/node": "^26.2.0"
+    "@types/node": "^26.5.1",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.12.2",
+    "rimraf": "^6.1.3",
+    "typescript": "^7.0.2"
   },
   "dependencies": {
-    "dotenv": "^18.0.0",
-    "playwright": "^1.63.0"
+    "dotenv": "^17.4.2"
   }
 }

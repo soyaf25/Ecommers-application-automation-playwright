@@ -1,9 +1,9 @@
-import  userLogin from "../test-data/userLogin.json"with { type: "json" };
-import { expect, test } from "../src/fixture/TestFixture.js";
+import  userLogin from "../test-data/userLogin.json"
+import { expect, test } from "../src/fixture/TestFixture";
 import type { Locator, Page}  from '@playwright/test';
-import { HomePage } from "../src/pages/HomePage.js";
-import { selfRegister } from "../src/pages/selfRegisterPage.js";
-import { RandomeUtil } from "../src/utills/RandomUtils.js";
+import { HomePage } from "../src/pages/HomePage";
+import { selfRegister } from "../src/pages/selfRegisterPage";
+import { RandomeUtil } from "../src/utills/RandomUtils";
 
 
 test(`loginwith valid user id - ${userLogin.validuser}`,{tag:['@smoke']},async({loginPage,homePage})=>{
