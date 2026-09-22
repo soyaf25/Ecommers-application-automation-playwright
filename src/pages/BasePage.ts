@@ -1,7 +1,7 @@
-import  { commonUtils } from "../utills/commonActionUtills.js";
-import  { RandomeUtil } from "../utills/RandomUtils.js";
-import  { waitUtils } from "../utills/Waitutils.js";
-import type {Page} from "@playwright/test";
+import  { commonUtils } from "../utills/commonActionUtills";
+import  { RandomeUtil } from "../utills/RandomUtils";
+import  { waitUtils } from "../utills/Waitutils";
+import {Page} from "@playwright/test";
 
 
 

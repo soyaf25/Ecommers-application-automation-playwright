@@ -311,7 +311,7 @@ pipeline {
 
                     emailext(
 
-                        to: 'ganesh20215@gmail.com',
+                        to: 'soyaftashildar25@gmail.com',
 
                         subject: "${emoji} ${statusTag} - Playwright Automation Test - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
 
