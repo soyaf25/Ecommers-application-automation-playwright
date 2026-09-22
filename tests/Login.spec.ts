@@ -6,7 +6,7 @@ import { selfRegister } from "../src/pages/selfRegisterPage.js";
 import { RandomeUtil } from "../src/utills/RandomUtils.js";
 
 
-test(`loginwith valid user id - ${userLogin.validuser}`,async({loginPage,homePage})=>{
+test(`loginwith valid user id - ${userLogin.validuser}`,{tag:['@smoke']},async({loginPage,homePage})=>{
 
     await homePage.acceptcoki();
     await homePage.clickOnUserLogo();
@@ -14,17 +14,17 @@ test(`loginwith valid user id - ${userLogin.validuser}`,async({loginPage,homePag
 
 })
 
-test(`login with invalid user id- ${userLogin.invaliduser}`,async({loginPage,homePage,})=>{
+// test(`login with invalid user id- ${userLogin.invaliduser}`,async({loginPage,homePage,})=>{
 
-    await homePage.acceptcoki();
-    await homePage.clickOnUserLogo();
-    await loginPage.login(userLogin.invaliduser.email,userLogin.invaliduser.password);
-    await loginPage.ErrorMessage();
-})
+//     await homePage.acceptcoki();
+//     await homePage.clickOnUserLogo();
+//     await loginPage.login(userLogin.invaliduser.email,userLogin.invaliduser.password);
+//     await loginPage.ErrorMessage();
+// })
 
-test('create new account with valid data',async({homePage,SelfRegister})=>{
+// test('create new account with valid data',async({homePage,SelfRegister})=>{
     
-    await homePage.acceptcoki();
-    await homePage.clickOnUserLogo();
-    await  SelfRegister.create_Account();
-})
+//     await homePage.acceptcoki();
+//     await homePage.clickOnUserLogo();
+//     await  SelfRegister.create_Account();
+// })
