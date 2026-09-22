@@ -21,7 +21,7 @@ export interface enviromentconfig  {
 export const config :enviromentconfig = {
 
     env:envName,
-    baseURL : process.env.BaseURL||'https://www.camposcoffee.com/',
+    baseURL :'https://www.camposcoffee.com/',
     retries: Number(process.env.retries ?? 0),
 
 }
